@@ -102,11 +102,16 @@ public class Panel extends javax.swing.JFrame implements Runnable {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 butwithMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                butwithMouseEntered(evt);
+            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 butwithMouseExited(evt);
             }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                butwithMouseEntered(evt);
+        });
+        butwith.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                butwithActionPerformed(evt);
             }
         });
         getContentPane().add(butwith, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 280, 80));
@@ -460,6 +465,11 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         }
 
     }//GEN-LAST:event_instructionbnMouseClicked
+
+    private void butwithActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butwithActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_butwithActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton activitiesbn;
     private javax.swing.JButton butbalance;

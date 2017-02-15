@@ -25,7 +25,7 @@ import javax.swing.Timer;
 public class TRANSFERframe extends javax.swing.JDialog {
 
     static String accountID;
-    int checkingnumber = 0;
+    boolean check_account = false;
 
     public TRANSFERframe(java.awt.Frame parent, boolean modal, String stringkey) {
         super(parent, modal);
@@ -1076,11 +1076,10 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 CallableStatement cat = Connect.connectDatabase().prepareCall("{call Show_Account}");
                 ResultSet rst = cat.executeQuery();
                 while (rst.next()) {
-                    if (stringkey.equals(rst.getString("AccountBalance"))) {
+                    if (stringkey.equals(rst.getString("AccountID"))) {
                         checkinputaccount();
-                        
-                    } else {
-                      checkingnumber++;
+                        check_account = true;
+                        break;
                     }
                 }
                 
@@ -1088,7 +1087,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 e.printStackTrace();
             }
 
-        }if (checkingnumber>0) {
+        }if (check_account == false) {
                     JOptionPane.showMessageDialog(this, "The Beneficiary account you input does not exist");
                 }
     }//GEN-LAST:event_transferbnActionPerformed
