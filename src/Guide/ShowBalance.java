@@ -130,6 +130,7 @@ public class ShowBalance extends javax.swing.JDialog {
             ResultSet rs = cat.executeQuery();
             while (rs.next()) {
                 lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance") + "</b>$</html>");
+                
             }
         } catch (Exception ex) {
         }

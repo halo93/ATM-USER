@@ -10,10 +10,12 @@ import java.awt.Frame;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
 
@@ -30,7 +32,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         this.setSize(0, 0);
         new Thread(new DisplayClose(this, 1024, 734)).start();
         this.accountID = stringkey;
-        greetingguest();
+        
         Image icon = getToolkit().getImage(getClass().getResource("/images/bankicon.png"));
         setIconImage(icon);
 //        ServerTurn sn = new ServerTurn();
@@ -98,7 +100,6 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         lbpress = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lberror = new javax.swing.JLabel();
-        Greetinglb = new javax.swing.JLabel();
         butback = new javax.swing.JButton();
         but1 = new javax.swing.JButton();
         but2 = new javax.swing.JButton();
@@ -113,6 +114,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         but0 = new javax.swing.JButton();
         butenter = new javax.swing.JButton();
         backround = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -131,7 +133,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 txtpinKeyTyped(evt);
             }
         });
-        getContentPane().add(txtpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 250, 50));
+        getContentPane().add(txtpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 260, 50));
 
         butminimize.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/min1.png"))); // NOI18N
         butminimize.setToolTipText("Minimize");
@@ -186,22 +188,17 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         lbpress.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lbpress.setForeground(new java.awt.Color(255, 255, 255));
         lbpress.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, 330, 30));
+        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 330, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("PIN :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, 100, 30));
+        jLabel2.setText("PIN NUMBER :");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 270, 30));
 
         lberror.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lberror.setForeground(new java.awt.Color(255, 0, 0));
         getContentPane().add(lberror, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 350, 27));
-
-        Greetinglb.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        Greetinglb.setForeground(new java.awt.Color(255, 255, 255));
-        Greetinglb.setToolTipText("");
-        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 580, 50));
 
         butback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
         butback.setBorderPainted(false);
@@ -224,7 +221,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 butbackMouseExited(evt);
             }
         });
-        getContentPane().add(butback, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 570, 280, 80));
+        getContentPane().add(butback, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 530, 250, 80));
 
         but1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
         but1.setBorderPainted(false);
@@ -236,11 +233,11 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         but1.setRolloverEnabled(false);
         but1.setVerifyInputWhenFocusTarget(false);
         but1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                but1MouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 but1MouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                but1MouseEntered(evt);
             }
         });
         but1.addActionListener(new java.awt.event.ActionListener() {
@@ -248,7 +245,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but1ActionPerformed(evt);
             }
         });
-        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 80, 80));
+        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 80, 80));
 
         but2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
         but2.setBorderPainted(false);
@@ -272,7 +269,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but2ActionPerformed(evt);
             }
         });
-        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 360, 80, 80));
+        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 80, 80));
 
         but3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
         but3.setBorderPainted(false);
@@ -296,7 +293,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but3ActionPerformed(evt);
             }
         });
-        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 80, 80));
+        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 350, 80, 80));
 
         but4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
         but4.setBorderPainted(false);
@@ -320,7 +317,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but4ActionPerformed(evt);
             }
         });
-        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 80, 80));
+        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 80, 80));
 
         but5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/5.png"))); // NOI18N
         but5.setBorderPainted(false);
@@ -344,7 +341,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but5ActionPerformed(evt);
             }
         });
-        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 80, 80));
+        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, 80, 80));
 
         but6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/6.png"))); // NOI18N
         but6.setBorderPainted(false);
@@ -368,7 +365,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but6ActionPerformed(evt);
             }
         });
-        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, 80, 80));
+        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, 80, 80));
 
         but7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/7.png"))); // NOI18N
         but7.setBorderPainted(false);
@@ -392,7 +389,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but7ActionPerformed(evt);
             }
         });
-        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 80, 80));
+        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 530, 80, 80));
 
         but8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/8.png"))); // NOI18N
         but8.setBorderPainted(false);
@@ -416,7 +413,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but8ActionPerformed(evt);
             }
         });
-        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 540, 80, 80));
+        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 530, 80, 80));
 
         but9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/9.png"))); // NOI18N
         but9.setBorderPainted(false);
@@ -440,7 +437,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but9ActionPerformed(evt);
             }
         });
-        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 540, 80, 80));
+        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 530, 80, 80));
 
         butclear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backspace.png"))); // NOI18N
         butclear.setBorderPainted(false);
@@ -464,7 +461,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 butclearActionPerformed(evt);
             }
         });
-        getContentPane().add(butclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 630, 170, 80));
+        getContentPane().add(butclear, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 250, 80));
 
         but0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0.png"))); // NOI18N
         but0.setBorderPainted(false);
@@ -488,7 +485,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 but0ActionPerformed(evt);
             }
         });
-        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 630, 80, 80));
+        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 620, 80, 80));
 
         butenter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/enter.png"))); // NOI18N
         butenter.setToolTipText("");
@@ -514,11 +511,11 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
                 butenterActionPerformed(evt);
             }
         });
-        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, 280, 80));
+        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 350, 250, 80));
 
         backround.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        backround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.png"))); // NOI18N
         getContentPane().add(backround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -929,7 +926,6 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         // TODO add your handling code here:
     }//GEN-LAST:event_butclearMouseExited
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Greetinglb;
     private javax.swing.JLabel backround;
     private javax.swing.JButton but0;
     private javax.swing.JButton but1;
@@ -946,32 +942,14 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private javax.swing.JButton butenter;
     private javax.swing.JButton butexit;
     private javax.swing.JButton butminimize;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lberror;
     private javax.swing.JLabel lbpress;
     private javax.swing.JPasswordField txtpin;
     // End of variables declaration//GEN-END:variables
 
-    public void greetingguest() {
-        try {
-            Connect.connectDatabase();
-            CallableStatement call = Connect.connectDatabase().prepareCall("{call Login_Account}");
-            ResultSet rt = call.executeQuery();
-            while (rt.next()) {
-                if (accountID.equals(rt.getString("AccountID").toString())) {
-                    if (rt.getString("Gender").toString().equals("Male")) {
-                        Greetinglb.setText("<html>Have a nice day, Mr. <font color = '#1FBED6'>" + rt.getString("Fullname").toString() + "</font> !</html>");
-
-                        String gname = rt.getString("Fullname").toString();
-                    } else {
-                        Greetinglb.setText("<html>Have a nice day, Ms.(Mrs.) <font color = '#00FF00'>" + rt.getString("Fullname").toString() + "</font> !</html>");
-                    }
-                };
-            }
-        } catch (Exception ex) {
-            Logger.getLogger(User_Login.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
+    
 
     public void checkingtologin() {
         encryptionMD5 e5 = new encryptionMD5();

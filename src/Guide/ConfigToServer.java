@@ -178,7 +178,7 @@ public class ConfigToServer extends javax.swing.JFrame {
         });
         getContentPane().add(btSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 320, 150, 50));
 
-        txtport.setText("1433");
+        txtport.setText("11584");
         txtport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtportActionPerformed(evt);
@@ -199,7 +199,7 @@ public class ConfigToServer extends javax.swing.JFrame {
         });
         getContentPane().add(txtlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, 180, -1));
 
-        txtpassword.setText("123456");
+        txtpassword.setText("1234567");
         txtpassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtpasswordActionPerformed(evt);

@@ -95,7 +95,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1366, 550));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         butexit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close1.png"))); // NOI18N
@@ -151,18 +150,17 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         lberror.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lberror.setForeground(new java.awt.Color(255, 0, 0));
         lberror.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lberror, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 540, 29));
+        getContentPane().add(lberror, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 540, 29));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("ID :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 110, 80));
+        jLabel2.setText("NUMBER CARD:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 340, 80));
 
         lbpress.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lbpress.setForeground(new java.awt.Color(255, 255, 255));
         lbpress.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 340, 320, 40));
+        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 320, 40));
 
         txtcard.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
         txtcard.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -186,7 +184,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 txtcardKeyTyped(evt);
             }
         });
-        getContentPane().add(txtcard, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 380, 80));
+        getContentPane().add(txtcard, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 250, 340, 80));
 
         butenter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/enter.png"))); // NOI18N
         butenter.setBorderPainted(false);
@@ -211,7 +209,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 butenterActionPerformed(evt);
             }
         });
-        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 250, 280, 80));
+        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 380, 250, 80));
 
         backspace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backspace.png"))); // NOI18N
         backspace.setBorderPainted(false);
@@ -223,11 +221,11 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         backspace.setRolloverEnabled(false);
         backspace.setVerifyInputWhenFocusTarget(false);
         backspace.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                backspaceMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 backspaceMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                backspaceMouseExited(evt);
             }
         });
         backspace.addActionListener(new java.awt.event.ActionListener() {
@@ -235,7 +233,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 backspaceActionPerformed(evt);
             }
         });
-        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 650, 170, 80));
+        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 470, 250, 80));
 
         but0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0.png"))); // NOI18N
         but0.setToolTipText("");
@@ -260,7 +258,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but0ActionPerformed(evt);
             }
         });
-        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 650, 80, 80));
+        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 650, 80, 80));
 
         but1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
         but1.setBorderPainted(false);
@@ -272,11 +270,11 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but1.setRolloverEnabled(false);
         but1.setVerifyInputWhenFocusTarget(false);
         but1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                but1MouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 but1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                but1MouseExited(evt);
             }
         });
         but1.addActionListener(new java.awt.event.ActionListener() {
@@ -284,7 +282,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but1ActionPerformed(evt);
             }
         });
-        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 80, 80));
+        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 380, 80, 80));
 
         but2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
         but2.setBorderPainted(false);
@@ -308,7 +306,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but2ActionPerformed(evt);
             }
         });
-        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 380, 80, 80));
+        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, 80, 80));
 
         but3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
         but3.setBorderPainted(false);
@@ -332,7 +330,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but3ActionPerformed(evt);
             }
         });
-        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, 80, 80));
+        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, 80, 80));
 
         but4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
         but4.setBorderPainted(false);
@@ -356,7 +354,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but4ActionPerformed(evt);
             }
         });
-        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 470, 80, 80));
+        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 470, 80, 80));
 
         but5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/5.png"))); // NOI18N
         but5.setBorderPainted(false);
@@ -380,7 +378,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but5ActionPerformed(evt);
             }
         });
-        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 470, 80, 80));
+        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 470, 80, 80));
 
         but6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/6.png"))); // NOI18N
         but6.setBorderPainted(false);
@@ -404,7 +402,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but6ActionPerformed(evt);
             }
         });
-        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 470, 80, 80));
+        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 470, 80, 80));
 
         but7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/7.png"))); // NOI18N
         but7.setBorderPainted(false);
@@ -428,7 +426,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but7ActionPerformed(evt);
             }
         });
-        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 560, 80, 80));
+        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 560, 80, 80));
 
         but8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/8.png"))); // NOI18N
         but8.setBorderPainted(false);
@@ -452,7 +450,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but8ActionPerformed(evt);
             }
         });
-        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 560, 80, 80));
+        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 560, 80, 80));
 
         but9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/9.png"))); // NOI18N
         but9.setBorderPainted(false);
@@ -476,7 +474,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 but9ActionPerformed(evt);
             }
         });
-        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 560, 80, 80));
+        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 560, 80, 80));
 
         background.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.png"))); // NOI18N

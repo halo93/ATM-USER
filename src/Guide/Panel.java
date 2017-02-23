@@ -4,12 +4,18 @@
  */
 package Guide;
 
+import Connections.Connect;
+import static Guide.User_Login.accountID;
 import efiect.DisplayClose;
 import efiect.DisplayOpen;
 import java.awt.Frame;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.CallableStatement;
+import java.sql.ResultSet;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.Timer;
 
@@ -30,15 +36,37 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         new Thread(new DisplayClose(this, 1024, 734)).start();
         this.accountID = stringkey;
         new Thread(this).start();
+        greetingguest();
         Image icon = getToolkit().getImage(getClass().getResource("/images/bankicon.png"));
         setIconImage(icon);
     }
-
+public void greetingguest() {
+        try {
+            Connect.connectDatabase();
+            CallableStatement call = Connect.connectDatabase().prepareCall("{call Login_Account}");
+            ResultSet rt = call.executeQuery();
+            while (rt.next()) {
+                if (accountID.equals(rt.getString("AccountID").toString())) {
+                    if (rt.getString("Gender").toString().equals("Male")) {
+                        Greetinglb.setText("<html>Have a nice day, Mr. <font color = '#1FBED6'>" + rt.getString("Fullname").toString() + "</font> !</html>");
+                        Greetinglb.setSize(50, 400);
+                        String gname = rt.getString("Fullname").toString();
+                    } else {
+                        Greetinglb.setText("<html>Have a nice day, Ms.(Mrs.) <font color = '#00FF00'>" + rt.getString("Fullname").toString() + "</font> !</html>");
+                    Greetinglb.setSize(50, 400);
+                    
+                    }
+                };
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(User_Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     public void run() {
         try {
             while (true) {
                 if (lbtransaction.getText() == null) {
-                    lbtransaction.setText("Select your transaction.");
+                    lbtransaction.setText("Select Your Transaction!");
                 } else {
                     lbtransaction.setText(null);
                 }
@@ -78,8 +106,8 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         buttrans = new javax.swing.JButton();
         butclose = new javax.swing.JButton();
         butminimax = new javax.swing.JButton();
-        instructionbn = new javax.swing.JButton();
-        activitiesbn = new javax.swing.JButton();
+        buthistory = new javax.swing.JButton();
+        Greetinglb = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,7 +115,7 @@ public class Panel extends javax.swing.JFrame implements Runnable {
 
         lbtransaction.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         lbtransaction.setText("Select your transaction.");
-        getContentPane().add(lbtransaction, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, 440, 50));
+        getContentPane().add(lbtransaction, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, 510, 50));
 
         butwith.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/withdrawal.png"))); // NOI18N
         butwith.setBorderPainted(false);
@@ -163,7 +191,7 @@ public class Panel extends javax.swing.JFrame implements Runnable {
                 butpinMouseEntered(evt);
             }
         });
-        getContentPane().add(butpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, 280, 80));
+        getContentPane().add(butpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 220, 280, 80));
 
         butlogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
         butlogout.setBorderPainted(false);
@@ -175,17 +203,17 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         butlogout.setRolloverEnabled(false);
         butlogout.setVerifyInputWhenFocusTarget(false);
         butlogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                butlogoutMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 butlogoutMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 butlogoutMouseExited(evt);
             }
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                butlogoutMouseClicked(evt);
-            }
         });
-        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 600, 280, 80));
+        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, 280, 80));
 
         buttrans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/transfers.png"))); // NOI18N
         buttrans.setBorderPainted(false);
@@ -257,47 +285,38 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         });
         getContentPane().add(butminimax, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 25, 17, 10));
 
-        instructionbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/instruct.png"))); // NOI18N
-        instructionbn.setBorderPainted(false);
-        instructionbn.setContentAreaFilled(false);
-        instructionbn.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        instructionbn.setDefaultCapable(false);
-        instructionbn.setFocusPainted(false);
-        instructionbn.setFocusable(false);
-        instructionbn.setRequestFocusEnabled(false);
-        instructionbn.setRolloverEnabled(false);
-        instructionbn.setVerifyInputWhenFocusTarget(false);
-        instructionbn.addMouseListener(new java.awt.event.MouseAdapter() {
+        buthistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/recent.png"))); // NOI18N
+        buthistory.setBorderPainted(false);
+        buthistory.setContentAreaFilled(false);
+        buthistory.setDefaultCapable(false);
+        buthistory.setFocusPainted(false);
+        buthistory.setFocusable(false);
+        buthistory.setRequestFocusEnabled(false);
+        buthistory.setRolloverEnabled(false);
+        buthistory.setVerifyInputWhenFocusTarget(false);
+        buthistory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                instructionbnMouseClicked(evt);
+                buthistoryMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                buthistoryMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                buthistoryMouseExited(evt);
             }
         });
-        getContentPane().add(instructionbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 360, 280, 80));
-
-        activitiesbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/recent.png"))); // NOI18N
-        activitiesbn.setBorderPainted(false);
-        activitiesbn.setContentAreaFilled(false);
-        activitiesbn.setDefaultCapable(false);
-        activitiesbn.setFocusPainted(false);
-        activitiesbn.setFocusable(false);
-        activitiesbn.setRequestFocusEnabled(false);
-        activitiesbn.setRolloverEnabled(false);
-        activitiesbn.setVerifyInputWhenFocusTarget(false);
-        activitiesbn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                activitiesbnMouseClicked(evt);
-            }
-        });
-        activitiesbn.addActionListener(new java.awt.event.ActionListener() {
+        buthistory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                activitiesbnActionPerformed(evt);
+                buthistoryActionPerformed(evt);
             }
         });
-        getContentPane().add(activitiesbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 280, 80));
+        getContentPane().add(buthistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, 280, 80));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1024, 734));
+        Greetinglb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -20, 1024, 734));
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 134, 340, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -447,39 +466,41 @@ public class Panel extends javax.swing.JFrame implements Runnable {
         // TODO add your handling code here:
     }//GEN-LAST:event_butpinMouseClicked
 
-    private void activitiesbnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_activitiesbnActionPerformed
-    }//GEN-LAST:event_activitiesbnActionPerformed
+    private void buthistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buthistoryActionPerformed
+    }//GEN-LAST:event_buthistoryActionPerformed
 
-    private void activitiesbnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_activitiesbnMouseClicked
+    private void buthistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buthistoryMouseClicked
 
         if (evt.getClickCount() == 1) {
             new RECENTactivities(this, true, accountID).setVisible(true);
         }
 
-    }//GEN-LAST:event_activitiesbnMouseClicked
-
-    private void instructionbnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_instructionbnMouseClicked
-
-        if (evt.getClickCount() == 1) {
-            new UsersHelp(this, true).setVisible(true);
-        }
-
-    }//GEN-LAST:event_instructionbnMouseClicked
+    }//GEN-LAST:event_buthistoryMouseClicked
 
     private void butwithActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_butwithActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_butwithActionPerformed
 
+    private void buthistoryMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buthistoryMouseEntered
+        // TODO add your handling code here:
+        buthistory.setIcon(new ImageIcon("src/images/recent1.png"));
+    }//GEN-LAST:event_buthistoryMouseEntered
+
+    private void buthistoryMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buthistoryMouseExited
+        // TODO add your handling code here:
+        buthistory.setIcon(new ImageIcon("src/images/recent.png"));
+    }//GEN-LAST:event_buthistoryMouseExited
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton activitiesbn;
+    private javax.swing.JLabel Greetinglb;
     private javax.swing.JButton butbalance;
     private javax.swing.JButton butclose;
+    private javax.swing.JButton buthistory;
     private javax.swing.JButton butlogout;
     private javax.swing.JButton butminimax;
     private javax.swing.JButton butpin;
     private javax.swing.JButton buttrans;
     private javax.swing.JButton butwith;
-    private javax.swing.JButton instructionbn;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lbtransaction;
     // End of variables declaration//GEN-END:variables
