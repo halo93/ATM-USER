@@ -188,7 +188,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         lbpress.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lbpress.setForeground(new java.awt.Color(255, 255, 255));
         lbpress.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 330, 30));
+        getContentPane().add(lbpress, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 330, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -198,7 +198,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
 
         lberror.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lberror.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(lberror, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 350, 27));
+        getContentPane().add(lberror, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 270, 350, 27));
 
         butback.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/back.png"))); // NOI18N
         butback.setBorderPainted(false);
@@ -515,7 +515,9 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
 
         backround.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(backround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 130, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -107,15 +107,16 @@ public void greetingguest() {
         butclose = new javax.swing.JButton();
         butminimax = new javax.swing.JButton();
         buthistory = new javax.swing.JButton();
-        Greetinglb = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        Greetinglb = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbtransaction.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        lbtransaction.setForeground(new java.awt.Color(255, 255, 255));
         lbtransaction.setText("Select your transaction.");
-        getContentPane().add(lbtransaction, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, 510, 50));
+        getContentPane().add(lbtransaction, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 450, 50));
 
         butwith.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/withdrawal.png"))); // NOI18N
         butwith.setBorderPainted(false);
@@ -142,7 +143,7 @@ public void greetingguest() {
                 butwithActionPerformed(evt);
             }
         });
-        getContentPane().add(butwith, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 280, 80));
+        getContentPane().add(butwith, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 250, 80));
 
         butbalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/balance.png"))); // NOI18N
         butbalance.setBorderPainted(false);
@@ -169,7 +170,7 @@ public void greetingguest() {
                 butbalanceActionPerformed(evt);
             }
         });
-        getContentPane().add(butbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 280, 80));
+        getContentPane().add(butbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 250, 80));
 
         butpin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pinchange.png"))); // NOI18N
         butpin.setBorderPainted(false);
@@ -191,7 +192,7 @@ public void greetingguest() {
                 butpinMouseEntered(evt);
             }
         });
-        getContentPane().add(butpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 220, 280, 80));
+        getContentPane().add(butpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 220, 250, 80));
 
         butlogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logout.png"))); // NOI18N
         butlogout.setBorderPainted(false);
@@ -213,7 +214,7 @@ public void greetingguest() {
                 butlogoutMouseExited(evt);
             }
         });
-        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, 280, 80));
+        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 470, 250, 80));
 
         buttrans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/transfers.png"))); // NOI18N
         buttrans.setBorderPainted(false);
@@ -225,17 +226,17 @@ public void greetingguest() {
         buttrans.setRolloverEnabled(false);
         buttrans.setVerifyInputWhenFocusTarget(false);
         buttrans.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                buttransMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 buttransMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 buttransMouseExited(evt);
             }
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                buttransMouseClicked(evt);
-            }
         });
-        getContentPane().add(buttrans, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 280, 80));
+        getContentPane().add(buttrans, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 250, 80));
 
         butclose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close1.png"))); // NOI18N
         butclose.setBorderPainted(false);
@@ -310,13 +311,14 @@ public void greetingguest() {
                 buthistoryActionPerformed(evt);
             }
         });
-        getContentPane().add(buthistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 340, 280, 80));
-
-        Greetinglb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, -20, 1024, 734));
+        getContentPane().add(buthistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 350, 250, 80));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 134, 340, 40));
+
+        Greetinglb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Greetinglb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
+        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 740));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
