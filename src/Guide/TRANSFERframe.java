@@ -136,6 +136,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Please input the beneficiary account No.");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 333, -1));
 
@@ -189,10 +190,12 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 butcancelMouseClicked(evt);
             }
         });
-        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 630, 280, 80));
+        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 620, 250, 80));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("NOTE:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 520, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
 
         txtaccount1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txtaccount1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -211,6 +214,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
         getContentPane().add(txtaccount1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 300, -1));
 
         lbinputmoney.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lbinputmoney.setForeground(new java.awt.Color(255, 255, 255));
         lbinputmoney.setText("Please input the amount of money you want to transfer");
         getContentPane().add(lbinputmoney, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, 20));
 
@@ -237,9 +241,10 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 transferbnActionPerformed(evt);
             }
         });
-        getContentPane().add(transferbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 280, 80));
+        getContentPane().add(transferbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 250, 80));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Please re-input the following account No.");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 337, -1));
         getContentPane().add(lbcheckaccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
@@ -1046,7 +1051,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
         getContentPane().add(backspaceam, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 470, 170, 80));
 
         bg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.gif"))); // NOI18N
         bg.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 bgKeyPressed(evt);

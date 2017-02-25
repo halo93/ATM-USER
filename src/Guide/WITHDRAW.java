@@ -99,11 +99,11 @@ public class WITHDRAW extends javax.swing.JDialog {
         withdrawbn.setRolloverEnabled(false);
         withdrawbn.setVerifyInputWhenFocusTarget(false);
         withdrawbn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                withdrawbnMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 withdrawbnMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                withdrawbnMouseExited(evt);
             }
         });
         withdrawbn.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +111,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 withdrawbnActionPerformed(evt);
             }
         });
-        getContentPane().add(withdrawbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 280, 80));
+        getContentPane().add(withdrawbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 620, 250, 80));
 
         txtnote.setColumns(20);
         txtnote.setRows(5);
@@ -120,6 +120,7 @@ public class WITHDRAW extends javax.swing.JDialog {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 260, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("NOTE:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
 
@@ -132,8 +133,9 @@ public class WITHDRAW extends javax.swing.JDialog {
         getContentPane().add(txtwithdraw, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 260, 35));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("PLEASE INPUT THE AMOUNT OF MONEY YOU WANT TO WITHDRAW");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 630, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 630, -1));
 
         butcancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancel.png"))); // NOI18N
         butcancel.setBorderPainted(false);
@@ -155,15 +157,18 @@ public class WITHDRAW extends javax.swing.JDialog {
                 butcancelMouseEntered(evt);
             }
         });
-        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 280, 80));
+        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 620, 250, 80));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("MONEY:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("$");
         jLabel5.setToolTipText("");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, -1, -1));
 
         but1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
         but1.setBorderPainted(false);
@@ -187,7 +192,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but1ActionPerformed(evt);
             }
         });
-        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 80, 80));
+        getContentPane().add(but1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 190, 80, 80));
 
         but2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/2.png"))); // NOI18N
         but2.setBorderPainted(false);
@@ -211,7 +216,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but2ActionPerformed(evt);
             }
         });
-        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 80, 80));
+        getContentPane().add(but2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 190, 80, 80));
 
         but3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/3.png"))); // NOI18N
         but3.setBorderPainted(false);
@@ -235,7 +240,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but3ActionPerformed(evt);
             }
         });
-        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 180, 80, 80));
+        getContentPane().add(but3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 80, 80));
 
         but6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/6.png"))); // NOI18N
         but6.setBorderPainted(false);
@@ -259,7 +264,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but6ActionPerformed(evt);
             }
         });
-        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 270, 80, 80));
+        getContentPane().add(but6, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, 80, 80));
 
         but5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/5.png"))); // NOI18N
         but5.setBorderPainted(false);
@@ -283,7 +288,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but5ActionPerformed(evt);
             }
         });
-        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 80, 80));
+        getContentPane().add(but5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 280, 80, 80));
 
         but4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/4.png"))); // NOI18N
         but4.setBorderPainted(false);
@@ -307,7 +312,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but4ActionPerformed(evt);
             }
         });
-        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 80, 80));
+        getContentPane().add(but4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 280, 80, 80));
 
         but7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/7.png"))); // NOI18N
         but7.setBorderPainted(false);
@@ -331,7 +336,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but7ActionPerformed(evt);
             }
         });
-        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 80, 80));
+        getContentPane().add(but7, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 370, 80, 80));
 
         but9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/9.png"))); // NOI18N
         but9.setBorderPainted(false);
@@ -355,7 +360,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but9ActionPerformed(evt);
             }
         });
-        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 80, 80));
+        getContentPane().add(but9, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 370, 80, 80));
 
         but8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/8.png"))); // NOI18N
         but8.setBorderPainted(false);
@@ -379,7 +384,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but8ActionPerformed(evt);
             }
         });
-        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 80, 80));
+        getContentPane().add(but8, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 370, 80, 80));
 
         but0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0.png"))); // NOI18N
         but0.setToolTipText("");
@@ -404,7 +409,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                 but0ActionPerformed(evt);
             }
         });
-        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 450, 80, 80));
+        getContentPane().add(but0, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 460, 80, 80));
 
         backspace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backspace.png"))); // NOI18N
         backspace.setBorderPainted(false);
@@ -428,10 +433,10 @@ public class WITHDRAW extends javax.swing.JDialog {
                 backspaceActionPerformed(evt);
             }
         });
-        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 170, 80));
+        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 460, 170, 80));
 
         bg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.gif"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1024, 734));
 
         pack();
