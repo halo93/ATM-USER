@@ -479,7 +479,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
 
         background.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
-        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 10, -1, 734));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1050, 740));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

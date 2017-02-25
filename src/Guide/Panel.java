@@ -318,7 +318,7 @@ public void greetingguest() {
 
         Greetinglb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Greetinglb.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
-        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 740));
+        getContentPane().add(Greetinglb, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 740));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

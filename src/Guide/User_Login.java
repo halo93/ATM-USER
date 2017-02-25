@@ -517,7 +517,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
         getContentPane().add(backround, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 730));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
