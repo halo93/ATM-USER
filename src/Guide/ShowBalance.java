@@ -131,7 +131,12 @@ public class ShowBalance extends javax.swing.JDialog {
             cat.setString(1, accountID);
             ResultSet rs = cat.executeQuery();
             while (rs.next()) {
-                lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance") + "</b>$</html>");
+                if (Integer.parseInt(String.valueOf(rs.getString("AccountBalance").charAt(rs.getString("AccountBalance").indexOf(".")+1)))>0) {
+                    lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance").substring(0, rs.getString("AccountBalance").indexOf(".")+3) + "</b>$</html>");
+                } else {
+                    
+                    lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance") + "</b>$</html>");
+                }
                 
             }
         } catch (Exception ex) {

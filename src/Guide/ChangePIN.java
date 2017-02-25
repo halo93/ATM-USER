@@ -227,7 +227,7 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtpinoldKeyTyped(evt);
             }
         });
-        getContentPane().add(txtpinold, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 250, 40));
+        getContentPane().add(txtpinold, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 250, 40));
 
         txtnewpin.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         txtnewpin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -243,17 +243,17 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtnewpinKeyTyped(evt);
             }
         });
-        getContentPane().add(txtnewpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 250, 40));
+        getContentPane().add(txtnewpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 250, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Old PIN :");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("New PIN :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, -1, -1));
 
         txtconfirm.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         txtconfirm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -269,28 +269,28 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtconfirmKeyTyped(evt);
             }
         });
-        getContentPane().add(txtconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 250, 40));
+        getContentPane().add(txtconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 250, 40));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Confirm PIN :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 340, -1, -1));
 
         lb1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lb1.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(lb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 380, 30));
+        getContentPane().add(lb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 380, 30));
 
         lb2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lb2.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(lb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 370, 380, 30));
+        getContentPane().add(lb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 380, 30));
 
         lb3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lb3.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(lb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 510, 360, 30));
+        getContentPane().add(lb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 360, 30));
 
         lb4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lb4.setForeground(new java.awt.Color(204, 0, 0));
-        getContentPane().add(lb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 370, 30));
+        getContentPane().add(lb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 370, 30));
 
         but1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
         but1.setBorderPainted(false);
