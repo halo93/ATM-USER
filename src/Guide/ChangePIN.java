@@ -189,7 +189,7 @@ public class ChangePIN extends javax.swing.JDialog {
                 butcancelMouseEntered(evt);
             }
         });
-        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 280, 80));
+        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 620, 250, 80));
 
         butchange.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/changePIN.png"))); // NOI18N
         butchange.setBorderPainted(false);
@@ -211,7 +211,7 @@ public class ChangePIN extends javax.swing.JDialog {
                 butchangeMouseEntered(evt);
             }
         });
-        getContentPane().add(butchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 280, 80));
+        getContentPane().add(butchange, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 610, 250, 80));
 
         txtpinold.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         txtpinold.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -227,7 +227,7 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtpinoldKeyTyped(evt);
             }
         });
-        getContentPane().add(txtpinold, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 250, 40));
+        getContentPane().add(txtpinold, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 250, 40));
 
         txtnewpin.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         txtnewpin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -243,15 +243,17 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtnewpinKeyTyped(evt);
             }
         });
-        getContentPane().add(txtnewpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 250, 40));
+        getContentPane().add(txtnewpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 250, 40));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Old PIN :");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("New PIN :");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 260, -1, -1));
 
         txtconfirm.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
         txtconfirm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -267,11 +269,12 @@ public class ChangePIN extends javax.swing.JDialog {
                 txtconfirmKeyTyped(evt);
             }
         });
-        getContentPane().add(txtconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 470, 250, 40));
+        getContentPane().add(txtconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 250, 40));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Confirm PIN :");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, -1, -1));
 
         lb1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lb1.setForeground(new java.awt.Color(204, 0, 0));
@@ -1085,7 +1088,7 @@ public class ChangePIN extends javax.swing.JDialog {
         getContentPane().add(backspaceam, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 470, 170, 80));
 
         bg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.gif"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1024, 734));
 
         pack();
@@ -1705,19 +1708,6 @@ public class ChangePIN extends javax.swing.JDialog {
         }         // TODO add your handling code here:
     }//GEN-LAST:event_re0ActionPerformed
 
-    private void backspacereMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspacereMouseExited
-        backspacere.setIcon(new ImageIcon("src/images/backspace.png"));      // TODO add your handling code here:
-    }//GEN-LAST:event_backspacereMouseExited
-
-    private void backspacereMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspacereMouseEntered
-        backspacere.setIcon(new ImageIcon("src/images/backspace1.png"));        // TODO add your handling code here:
-    }//GEN-LAST:event_backspacereMouseEntered
-
-    private void backspacereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backspacereActionPerformed
-        txtnewpin.setText("");
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backspacereActionPerformed
-
     private void am1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_am1MouseExited
         am1.setIcon(new ImageIcon("src/images/1.png"));        // TODO add your handling code here:
     }//GEN-LAST:event_am1MouseExited
@@ -1899,20 +1889,6 @@ public class ChangePIN extends javax.swing.JDialog {
         }           // TODO add your handling code here:
     }//GEN-LAST:event_am0ActionPerformed
 
-    private void backspaceamMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceamMouseExited
-        backspaceam.setIcon(new ImageIcon("src/images/backspace.png"));     // TODO add your handling code here:
-    }//GEN-LAST:event_backspaceamMouseExited
-
-    private void backspaceamMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceamMouseEntered
-        backspaceam.setIcon(new ImageIcon("src/images/backspace1.png"));           // TODO add your handling code here:
-    }//GEN-LAST:event_backspaceamMouseEntered
-
-    private void backspaceamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backspaceamActionPerformed
-
-        txtconfirm.setText("");
-        // TODO add your handling code here:
-    }//GEN-LAST:event_backspaceamActionPerformed
-
     private void txtpinoldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtpinoldMouseClicked
         but0.setVisible(true);
         but1.setVisible(true);
@@ -2026,6 +2002,34 @@ public class ChangePIN extends javax.swing.JDialog {
         am9.setVisible(true);
         backspaceam.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_txtconfirmMouseClicked
+
+    private void backspaceamActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backspaceamActionPerformed
+
+        txtconfirm.setText("");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backspaceamActionPerformed
+
+    private void backspaceamMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceamMouseEntered
+        backspaceam.setIcon(new ImageIcon("src/images/backspace1.png"));           // TODO add your handling code here:
+    }//GEN-LAST:event_backspaceamMouseEntered
+
+    private void backspaceamMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspaceamMouseExited
+        backspaceam.setIcon(new ImageIcon("src/images/backspace.png"));     // TODO add your handling code here:
+    }//GEN-LAST:event_backspaceamMouseExited
+
+    private void backspacereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backspacereActionPerformed
+        txtnewpin.setText("");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backspacereActionPerformed
+
+    private void backspacereMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspacereMouseEntered
+        backspacere.setIcon(new ImageIcon("src/images/backspace1.png"));        // TODO add your handling code here:
+    }//GEN-LAST:event_backspacereMouseEntered
+
+    private void backspacereMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backspacereMouseExited
+        backspacere.setIcon(new ImageIcon("src/images/backspace.png"));      // TODO add your handling code here:
+    }//GEN-LAST:event_backspacereMouseExited
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton am0;
     private javax.swing.JButton am1;

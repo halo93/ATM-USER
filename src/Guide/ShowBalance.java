@@ -59,10 +59,12 @@ public class ShowBalance extends javax.swing.JDialog {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbbalance.setFont(new java.awt.Font("Calibri", 0, 48)); // NOI18N
+        lbbalance.setForeground(new java.awt.Color(255, 255, 255));
         lbbalance.setText("YOUR BALANCE IS:");
         getContentPane().add(lbbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, -1, -1));
 
         lbgreeting.setFont(new java.awt.Font("Calibri", 0, 48)); // NOI18N
+        lbgreeting.setForeground(new java.awt.Color(255, 255, 255));
         lbgreeting.setText("GREETINGS!");
         getContentPane().add(lbgreeting, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, -1));
 
@@ -86,10 +88,10 @@ public class ShowBalance extends javax.swing.JDialog {
                 butcancelMouseEntered(evt);
             }
         });
-        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 280, 80));
+        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 250, 80));
 
         bg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1024, 734));
 
         pack();
@@ -130,6 +132,7 @@ public class ShowBalance extends javax.swing.JDialog {
             ResultSet rs = cat.executeQuery();
             while (rs.next()) {
                 lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance") + "</b>$</html>");
+                
             }
         } catch (Exception ex) {
         }

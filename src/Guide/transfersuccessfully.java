@@ -88,21 +88,25 @@ public class transfersuccessfully extends javax.swing.JDialog {
                 jButton1MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 580, 280, 80));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 580, 250, 80));
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 30)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("You have successfully transfered your money! Here is the transaction details:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
         lbbalance.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lbbalance.setForeground(new java.awt.Color(255, 255, 255));
         lbbalance.setText("Account Balance: ");
         getContentPane().add(lbbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
 
         lbaccreceived.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lbaccreceived.setForeground(new java.awt.Color(255, 255, 255));
         lbaccreceived.setText("account received");
         getContentPane().add(lbaccreceived, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, -1, -1));
 
         lbmoney.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        lbmoney.setForeground(new java.awt.Color(255, 255, 255));
         lbmoney.setText("Amount of money transfered:");
         getContentPane().add(lbmoney, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, -1, -1));
 
@@ -110,7 +114,7 @@ public class transfersuccessfully extends javax.swing.JDialog {
         lbaccountID.setText("jLabel1");
         getContentPane().add(lbaccountID, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
 
-        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.png"))); // NOI18N
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.gif"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
