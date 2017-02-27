@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class RECENTactivities extends javax.swing.JDialog {
 

@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class WithdrawInfoShow extends javax.swing.JDialog {
 

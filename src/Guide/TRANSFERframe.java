@@ -20,7 +20,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class TRANSFERframe extends javax.swing.JDialog {
 
@@ -89,14 +89,11 @@ public class TRANSFERframe extends javax.swing.JDialog {
         txtmoneytrans = new javax.swing.JTextField();
         txtaccount2 = new javax.swing.JTextField();
         butcancel = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         txtaccount1 = new javax.swing.JTextField();
         lbinputmoney = new javax.swing.JLabel();
         transferbn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         lbcheckaccount = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtnote = new javax.swing.JTextArea();
         but1 = new javax.swing.JButton();
         but2 = new javax.swing.JButton();
         but3 = new javax.swing.JButton();
@@ -192,11 +189,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         });
         getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 620, 250, 80));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("NOTE:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 480, -1, -1));
-
         txtaccount1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txtaccount1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -248,12 +240,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         jLabel3.setText("Please re-input the following account No.");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 337, -1));
         getContentPane().add(lbcheckaccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
-
-        txtnote.setColumns(20);
-        txtnote.setRows(5);
-        jScrollPane1.setViewportView(txtnote);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 480, 300, -1));
 
         but1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1.png"))); // NOI18N
         but1.setBorderPainted(false);
@@ -1191,7 +1177,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void but1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but1ActionPerformed
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount1.setText(aa + "1");
         }
         if (aa.length() == 4) {
@@ -1221,7 +1207,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but2ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "2");
         }
@@ -1254,7 +1240,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but3ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "3");
         }
@@ -1287,7 +1273,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but6ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "6");
         }
@@ -1317,7 +1303,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void but5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but5ActionPerformed
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "5");
         }
@@ -1349,7 +1335,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but4ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "4");
         }
@@ -1379,7 +1365,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but7ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "7");
         }
@@ -1411,7 +1397,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but8ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "8");
         }
@@ -1442,7 +1428,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but9ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "9");
         }
@@ -1476,7 +1462,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private void but0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but0ActionPerformed
 
         String aa = this.txtaccount1.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtaccount1.setText(aa + "0");
         }
@@ -1605,7 +1591,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re1ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "1");
         }
         if (aa.length() == 4) {
@@ -1630,7 +1616,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re2ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "2");
         }
         if (aa.length() == 4) {
@@ -1655,7 +1641,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re3ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "3");
         }
         if (aa.length() == 4) {
@@ -1680,7 +1666,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re4ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "4");
         }
         if (aa.length() == 4) {
@@ -1705,7 +1691,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re5ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "5");
         }
         if (aa.length() == 4) {
@@ -1732,7 +1718,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re6ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "6");
         }
         if (aa.length() == 4) {
@@ -1757,7 +1743,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re7ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "7");
         }
         if (aa.length() == 4) {
@@ -1784,7 +1770,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re8ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "8");
         }
         if (aa.length() == 4) {
@@ -1809,7 +1795,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re9ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "9");
         }
         if (aa.length() == 4) {
@@ -1834,7 +1820,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void re0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_re0ActionPerformed
         String aa = this.txtaccount2.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtaccount2.setText(aa + "0");
         }
         if (aa.length() == 4) {
@@ -1918,7 +1904,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am1ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "1");
         }
         // TODO add your handling code here:
@@ -1934,7 +1920,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am2ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "2");
         }
         // TODO add your handling code here:
@@ -1950,7 +1936,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am3ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "3");
         }
         // TODO add your handling code here:
@@ -1966,7 +1952,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am4ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "4");
         }
         // TODO add your handling code here:
@@ -1982,7 +1968,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am5ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "5");
         }
         // TODO add your handling code here:
@@ -1998,7 +1984,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am6ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "6");
         }
         // TODO add your handling code here:
@@ -2014,7 +2000,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am7ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "7");
         }
         // TODO add your handling code here:
@@ -2030,7 +2016,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am8ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "8");
         }
         // TODO add your handling code here:
@@ -2046,7 +2032,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am9ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "9");
         }
         // TODO add your handling code here:
@@ -2062,7 +2048,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
     private void am0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_am0ActionPerformed
         String aa = this.txtmoneytrans.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             txtmoneytrans.setText(aa + "0");
         }
         // TODO add your handling code here:
@@ -2183,7 +2169,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 trc.setFloat(4, Float.parseFloat(this.txtmoneytrans.getText()));
                 trc.setFloat(5, reset.getFloat("TransactionFee") + reset.getFloat("FeeCountedOnTurn"));
                 trc.setFloat(6, Float.parseFloat(this.txtmoneytrans.getText()) - reset.getFloat("TransactionFee") * Float.parseFloat(this.txtmoneytrans.getText()) - reset.getFloat("FeeCountedOnTurn"));
-                trc.setString(7, txtnote.getText().toString());
 
                 trcr.setString(1, cr);
                 trcr.setString(2, accountID);
@@ -2191,7 +2176,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 trcr.setFloat(4, Float.parseFloat(this.txtmoneytrans.getText()));
                 trcr.setFloat(5, reset.getFloat("TransactionFee") + reset.getFloat("FeeCountedOnTurn"));
                 trcr.setFloat(6, Float.parseFloat(this.txtmoneytrans.getText()) - reset.getFloat("TransactionFee") * Float.parseFloat(this.txtmoneytrans.getText()) - reset.getFloat("FeeCountedOnTurn"));
-                trcr.setString(7, txtnote.getText().toString());
             }
 
             int rowEffected = trc.executeUpdate();
@@ -2207,7 +2191,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 clt.setString(6, accountID);
                 clt.setFloat(7, rst.getFloat("AccountBalance"));
                 clt.setString(8, cr);
-                clt.setString(9, txtnote.getText().toString());
                 clt.executeUpdate();
             }
 
@@ -2363,8 +2346,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private javax.swing.JButton butcancel;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbcheckaccount;
     private javax.swing.JLabel lbinputmoney;
     private javax.swing.JButton re0;
@@ -2381,6 +2362,5 @@ public class TRANSFERframe extends javax.swing.JDialog {
     private javax.swing.JTextField txtaccount1;
     private javax.swing.JTextField txtaccount2;
     private javax.swing.JTextField txtmoneytrans;
-    private javax.swing.JTextArea txtnote;
     // End of variables declaration//GEN-END:variables
 }

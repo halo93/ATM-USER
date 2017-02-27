@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class WithdrawInfoShow extends javax.swing.JDialog {
 
@@ -116,7 +116,6 @@ public class WithdrawInfoShow extends javax.swing.JDialog {
         mod.addColumn("Amount of money");
         mod.addColumn("Fee");
         mod.addColumn("Total");
-        mod.addColumn("Note");
     }
 
     public void LoadingWithdraw() {
@@ -133,7 +132,6 @@ public class WithdrawInfoShow extends javax.swing.JDialog {
                 data.add(result.getFloat("MoneyWithdrawn"));
                 data.add(result.getFloat("TransactionFee"));
                 data.add(result.getFloat("Total"));
-                data.add(result.getString("Note").toString());
                 mod.addRow(data);
 
             }

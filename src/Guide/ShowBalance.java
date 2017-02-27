@@ -12,7 +12,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class ShowBalance extends javax.swing.JDialog {
 
@@ -134,7 +134,6 @@ public class ShowBalance extends javax.swing.JDialog {
                 if (Integer.parseInt(String.valueOf(rs.getString("AccountBalance").charAt(rs.getString("AccountBalance").indexOf(".")+1)))>0) {
                     lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance").substring(0, rs.getString("AccountBalance").indexOf(".")+3) + "</b>$</html>");
                 } else {
-                    
                     lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rs.getString("AccountBalance") + "</b>$</html>");
                 }
                 

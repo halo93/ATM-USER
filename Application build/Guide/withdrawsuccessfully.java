@@ -14,7 +14,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class withdrawsuccessfully extends javax.swing.JDialog {
 

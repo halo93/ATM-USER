@@ -14,7 +14,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class withdrawsuccessfully extends javax.swing.JDialog {
 
@@ -129,7 +129,11 @@ public void loaddetail() {
             ct.setString(1, AccountIDb);
             ResultSet rt = ct.executeQuery();
             while (rt.next()) {
-                lbbalance.setText("Your account balance is: " + rt.getString("AccountBalance"));
+                if (Integer.parseInt(String.valueOf(rt.getString("AccountBalance").charAt(rt.getString("AccountBalance").indexOf(".")+1)))>0) {
+                    lbbalance.setText("Your account balance is: " + rt.getString("AccountBalance"));
+                } else {
+                    lbbalance.setText("<html>YOUR BALANCE IS: <b>" + rt.getString("AccountBalance") + "</b>$</html>");
+                }
             }
 
 

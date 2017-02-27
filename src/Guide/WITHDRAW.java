@@ -20,7 +20,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class WITHDRAW extends javax.swing.JDialog {
     
@@ -65,9 +65,6 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void initComponents() {
 
         withdrawbn = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtnote = new javax.swing.JTextArea();
-        jLabel2 = new javax.swing.JLabel();
         txtwithdraw = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         butcancel = new javax.swing.JButton();
@@ -112,17 +109,6 @@ public class WITHDRAW extends javax.swing.JDialog {
             }
         });
         getContentPane().add(withdrawbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 620, 250, 80));
-
-        txtnote.setColumns(20);
-        txtnote.setRows(5);
-        jScrollPane1.setViewportView(txtnote);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 260, -1));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("NOTE:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, -1));
 
         txtwithdraw.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         txtwithdraw.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -510,7 +496,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     
     private void but1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but1ActionPerformed
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "1");
             
@@ -533,7 +519,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but2ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "2");
         }
@@ -554,7 +540,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but3ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "3");
         }
@@ -579,7 +565,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but6ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "6");
         }
@@ -601,7 +587,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     
     private void but5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but5ActionPerformed
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "5");
         }
@@ -625,7 +611,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but4ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "4");
         }
@@ -646,7 +632,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but7ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "7");
         }
@@ -667,7 +653,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but9ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "9");
         }
@@ -691,7 +677,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but8ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "8");
         }
@@ -716,7 +702,7 @@ public class WITHDRAW extends javax.swing.JDialog {
     private void but0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but0ActionPerformed
         
         String aa = this.txtwithdraw.getText();
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
             
             txtwithdraw.setText(aa + "0");
         }
@@ -758,11 +744,8 @@ public class WITHDRAW extends javax.swing.JDialog {
     private javax.swing.JButton but9;
     private javax.swing.JButton butcancel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea txtnote;
     private javax.swing.JTextField txtwithdraw;
     private javax.swing.JButton withdrawbn;
     // End of variables declaration//GEN-END:variables
@@ -873,7 +856,6 @@ public class WITHDRAW extends javax.swing.JDialog {
                         trc.setFloat(3, Float.parseFloat(this.txtwithdraw.getText()));
                         trc.setFloat(4, reset.getFloat("TransactionFee") + reset.getFloat("FeeCountedOnTurn"));
                         trc.setFloat(5, Float.parseFloat(this.txtwithdraw.getText()) - reset.getFloat("TransactionFee") * Float.parseFloat(this.txtwithdraw.getText()) - reset.getFloat("FeeCountedOnTurn"));
-                        trc.setString(6, txtnote.getText().toString());
                         
                         trc.executeUpdate();
                         
@@ -886,7 +868,6 @@ public class WITHDRAW extends javax.swing.JDialog {
                         clt.setString(6, accountID);
                         clt.setFloat(7, rst.getFloat("AccountBalance"));
                         clt.setString(8, cr);
-                        clt.setString(9, txtnote.getText().toString());
                         clt.executeUpdate();
                         System.out.println("TC");
                     }
