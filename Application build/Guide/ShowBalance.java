@@ -12,7 +12,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class ShowBalance extends javax.swing.JDialog {
 

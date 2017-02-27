@@ -9,7 +9,7 @@ import java.awt.Image;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class RECENTactivities extends javax.swing.JDialog {
 

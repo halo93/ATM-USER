@@ -12,7 +12,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class UsersHelp extends javax.swing.JDialog {
 

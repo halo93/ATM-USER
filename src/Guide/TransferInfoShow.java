@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class TransferInfoShow extends javax.swing.JDialog {
 
@@ -137,7 +137,6 @@ public class TransferInfoShow extends javax.swing.JDialog {
         mod.addColumn("Amount of money");
         mod.addColumn("Fee");
         mod.addColumn("Total");
-        mod.addColumn("Note");
     }
 
     public void LoadingTransfer() {
@@ -155,7 +154,6 @@ public class TransferInfoShow extends javax.swing.JDialog {
                 data.add(result.getFloat("MoneyTransfered"));
                 data.add(result.getFloat("TransactionFee"));
                 data.add(result.getFloat("Total"));
-                data.add(result.getString("Note").toString());
                 mod.addRow(data);
             }
         } catch (Exception ex) {

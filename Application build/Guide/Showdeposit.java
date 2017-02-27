@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class Showdeposit extends javax.swing.JDialog {
 

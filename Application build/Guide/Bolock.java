@@ -12,7 +12,7 @@ import java.sql.ResultSet;
 
 /**
  *
- * @author Ngo Luan
+ * @author DMX
  */
 public class Bolock extends javax.swing.JDialog {
     

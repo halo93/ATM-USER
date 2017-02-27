@@ -638,7 +638,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but1ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "1");
         }
@@ -654,7 +654,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but2ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "2");
         }
@@ -669,7 +669,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but3ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "3");
         }
@@ -683,7 +683,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
 
     private void but4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but4ActionPerformed
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "4");
         }
@@ -699,7 +699,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but5ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "5");
         }
@@ -714,7 +714,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but6ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "6");
         }
@@ -730,7 +730,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but7ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "7");
         }
@@ -747,7 +747,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but8ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "8");
         }
@@ -763,7 +763,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
 
     private void but9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but9ActionPerformed
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "9");
         }
@@ -780,7 +780,7 @@ public class User_Login extends javax.swing.JFrame implements Runnable {
     private void but0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_but0ActionPerformed
 
         String aa = new String(this.txtpin.getPassword());
-        if (evt.getID() == 1001) {
+        if (evt.getID() == ActionEvent.ACTION_PERFORMED) {
 
             txtpin.setText(aa + "0");
         }

@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class ShowTransferInfo extends javax.swing.JFrame {
 

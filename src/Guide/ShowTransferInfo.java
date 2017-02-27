@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Kiet
+ * @author DMX
  */
 public class ShowTransferInfo extends javax.swing.JFrame {
 
@@ -96,7 +96,6 @@ public class ShowTransferInfo extends javax.swing.JFrame {
         mod.addColumn("Amount of money");
         mod.addColumn("Fee");
         mod.addColumn("Total");
-        mod.addColumn("Note");
 
         TransferInfo.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         TransferInfo.getColumnModel().getColumn(0).setPreferredWidth(90);
@@ -123,7 +122,6 @@ public class ShowTransferInfo extends javax.swing.JFrame {
                 data.add(result.getFloat("MoneyTransfered"));
                 data.add(result.getFloat("TransactionFee"));
                 data.add(result.getFloat("Total"));
-                data.add(result.getString("Note").toString());
                 mod.addRow(data);
 
             }
