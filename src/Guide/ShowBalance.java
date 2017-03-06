@@ -68,27 +68,26 @@ public class ShowBalance extends javax.swing.JDialog {
         lbgreeting.setText("GREETINGS!");
         getContentPane().add(lbgreeting, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 220, -1, -1));
 
-        butcancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancel.png"))); // NOI18N
+        butcancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         butcancel.setBorderPainted(false);
         butcancel.setContentAreaFilled(false);
         butcancel.setDefaultCapable(false);
         butcancel.setFocusPainted(false);
         butcancel.setFocusable(false);
         butcancel.setRequestFocusEnabled(false);
-        butcancel.setRolloverEnabled(false);
         butcancel.setVerifyInputWhenFocusTarget(false);
         butcancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 butcancelMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                butcancelMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 butcancelMouseEntered(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                butcancelMouseExited(evt);
+            }
         });
-        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, 250, 80));
+        getContentPane().add(butcancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 500, 250, 80));
 
         bg.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.gif"))); // NOI18N
@@ -109,12 +108,12 @@ public class ShowBalance extends javax.swing.JDialog {
     }//GEN-LAST:event_butcancelMouseClicked
 
     private void butcancelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butcancelMouseEntered
-        butcancel.setIcon(new ImageIcon("src/images/cancel1.png"));
+        butcancel.setIcon(new ImageIcon("src/images/close3.png"));
 
     }//GEN-LAST:event_butcancelMouseEntered
 
     private void butcancelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butcancelMouseExited
-        butcancel.setIcon(new ImageIcon("src/images/cancel.png"));
+        butcancel.setIcon(new ImageIcon("src/images/close.png"));
         // TODO add your handling code here:
     }//GEN-LAST:event_butcancelMouseExited
     // Variables declaration - do not modify//GEN-BEGIN:variables

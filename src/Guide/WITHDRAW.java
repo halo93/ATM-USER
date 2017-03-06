@@ -86,14 +86,13 @@ public class WITHDRAW extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        withdrawbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/withdrawal.png"))); // NOI18N
+        withdrawbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ok.png"))); // NOI18N
         withdrawbn.setBorderPainted(false);
         withdrawbn.setContentAreaFilled(false);
         withdrawbn.setDefaultCapable(false);
         withdrawbn.setFocusPainted(false);
         withdrawbn.setFocusable(false);
         withdrawbn.setRequestFocusEnabled(false);
-        withdrawbn.setRolloverEnabled(false);
         withdrawbn.setVerifyInputWhenFocusTarget(false);
         withdrawbn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -130,7 +129,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         butcancel.setFocusPainted(false);
         butcancel.setFocusable(false);
         butcancel.setRequestFocusEnabled(false);
-        butcancel.setRolloverEnabled(false);
         butcancel.setVerifyInputWhenFocusTarget(false);
         butcancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -163,7 +161,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but1.setFocusPainted(false);
         but1.setFocusable(false);
         but1.setRequestFocusEnabled(false);
-        but1.setRolloverEnabled(false);
         but1.setVerifyInputWhenFocusTarget(false);
         but1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -187,7 +184,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but2.setFocusPainted(false);
         but2.setFocusable(false);
         but2.setRequestFocusEnabled(false);
-        but2.setRolloverEnabled(false);
         but2.setVerifyInputWhenFocusTarget(false);
         but2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -211,7 +207,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but3.setFocusPainted(false);
         but3.setFocusable(false);
         but3.setRequestFocusEnabled(false);
-        but3.setRolloverEnabled(false);
         but3.setVerifyInputWhenFocusTarget(false);
         but3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -235,7 +230,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but6.setFocusPainted(false);
         but6.setFocusable(false);
         but6.setRequestFocusEnabled(false);
-        but6.setRolloverEnabled(false);
         but6.setVerifyInputWhenFocusTarget(false);
         but6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -259,7 +253,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but5.setFocusPainted(false);
         but5.setFocusable(false);
         but5.setRequestFocusEnabled(false);
-        but5.setRolloverEnabled(false);
         but5.setVerifyInputWhenFocusTarget(false);
         but5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -283,7 +276,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but4.setFocusPainted(false);
         but4.setFocusable(false);
         but4.setRequestFocusEnabled(false);
-        but4.setRolloverEnabled(false);
         but4.setVerifyInputWhenFocusTarget(false);
         but4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -307,7 +299,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but7.setFocusPainted(false);
         but7.setFocusable(false);
         but7.setRequestFocusEnabled(false);
-        but7.setRolloverEnabled(false);
         but7.setVerifyInputWhenFocusTarget(false);
         but7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -331,7 +322,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but9.setFocusPainted(false);
         but9.setFocusable(false);
         but9.setRequestFocusEnabled(false);
-        but9.setRolloverEnabled(false);
         but9.setVerifyInputWhenFocusTarget(false);
         but9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -355,7 +345,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but8.setFocusPainted(false);
         but8.setFocusable(false);
         but8.setRequestFocusEnabled(false);
-        but8.setRolloverEnabled(false);
         but8.setVerifyInputWhenFocusTarget(false);
         but8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -380,7 +369,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         but0.setFocusPainted(false);
         but0.setFocusable(false);
         but0.setRequestFocusEnabled(false);
-        but0.setRolloverEnabled(false);
         but0.setVerifyInputWhenFocusTarget(false);
         but0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -404,7 +392,6 @@ public class WITHDRAW extends javax.swing.JDialog {
         backspace.setFocusPainted(false);
         backspace.setFocusable(false);
         backspace.setRequestFocusEnabled(false);
-        backspace.setRolloverEnabled(false);
         backspace.setVerifyInputWhenFocusTarget(false);
         backspace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -460,12 +447,12 @@ public class WITHDRAW extends javax.swing.JDialog {
     }//GEN-LAST:event_butcancelMouseExited
     
     private void withdrawbnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_withdrawbnMouseEntered
-        withdrawbn.setIcon(new ImageIcon("src/images/withdrawal1.png"));
+        withdrawbn.setIcon(new ImageIcon("src/images/ok1.png"));
         // TODO add your handling code here:
     }//GEN-LAST:event_withdrawbnMouseEntered
     
     private void withdrawbnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_withdrawbnMouseExited
-        withdrawbn.setIcon(new ImageIcon("src/images/withdrawal.png"));
+        withdrawbn.setIcon(new ImageIcon("src/images/ok.png"));
         // TODO add your handling code here:
     }//GEN-LAST:event_withdrawbnMouseExited
     

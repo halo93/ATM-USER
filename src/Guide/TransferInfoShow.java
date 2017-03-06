@@ -71,21 +71,20 @@ public class TransferInfoShow extends javax.swing.JDialog {
         ));
         jScrollPane1.setViewportView(TransferInfo);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 206, 940, 330));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 206, 930, 330));
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("10 CURRENT TRANSFER ACTIVITIES");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, 360, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancel.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setDefaultCapable(false);
         jButton1.setFocusPainted(false);
         jButton1.setFocusable(false);
         jButton1.setRequestFocusEnabled(false);
-        jButton1.setRolloverEnabled(false);
         jButton1.setVerifyInputWhenFocusTarget(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -114,12 +113,12 @@ public class TransferInfoShow extends javax.swing.JDialog {
 
     private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
         // TODO add your handling code here:
-        jButton1.setIcon(new ImageIcon("src/images/cancel1.png"));
+        jButton1.setIcon(new ImageIcon("src/images/close3.png"));
     }//GEN-LAST:event_jButton1MouseEntered
 
     private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
         // TODO add your handling code here:
-        jButton1.setIcon(new ImageIcon("src/images/cancel.png"));
+        jButton1.setIcon(new ImageIcon("src/images/close.png"));
     }//GEN-LAST:event_jButton1MouseExited
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -50,7 +50,6 @@ public class RECENTactivities extends javax.swing.JDialog {
         withdrawbn.setFocusPainted(false);
         withdrawbn.setFocusable(false);
         withdrawbn.setRequestFocusEnabled(false);
-        withdrawbn.setRolloverEnabled(false);
         withdrawbn.setVerifyInputWhenFocusTarget(false);
         withdrawbn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -73,7 +72,6 @@ public class RECENTactivities extends javax.swing.JDialog {
         transferedbn.setFocusPainted(false);
         transferedbn.setFocusable(false);
         transferedbn.setRequestFocusEnabled(false);
-        transferedbn.setRolloverEnabled(false);
         transferedbn.setVerifyInputWhenFocusTarget(false);
         transferedbn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -100,7 +98,6 @@ public class RECENTactivities extends javax.swing.JDialog {
         depositbn.setFocusPainted(false);
         depositbn.setFocusable(false);
         depositbn.setRequestFocusEnabled(false);
-        depositbn.setRolloverEnabled(false);
         depositbn.setVerifyInputWhenFocusTarget(false);
         depositbn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -115,14 +112,13 @@ public class RECENTactivities extends javax.swing.JDialog {
         });
         getContentPane().add(depositbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 250, 80));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cancel.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close.png"))); // NOI18N
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setDefaultCapable(false);
         jButton2.setFocusPainted(false);
         jButton2.setFocusable(false);
         jButton2.setRequestFocusEnabled(false);
-        jButton2.setRolloverEnabled(false);
         jButton2.setVerifyInputWhenFocusTarget(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -137,7 +133,7 @@ public class RECENTactivities extends javax.swing.JDialog {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 500, 250, 80));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 500, 250, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bgpanel.gif"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -203,12 +199,12 @@ public class RECENTactivities extends javax.swing.JDialog {
 
     private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
         // TODO add your handling code here:
-        jButton2.setIcon(new ImageIcon("src/images/cancel1.png"));
+        jButton2.setIcon(new ImageIcon("src/images/close3.png"));
     }//GEN-LAST:event_jButton2MouseEntered
 
     private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
         // TODO add your handling code here:
-        jButton2.setIcon(new ImageIcon("src/images/cancel.png"));
+        jButton2.setIcon(new ImageIcon("src/images/close.png"));
     }//GEN-LAST:event_jButton2MouseExited
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

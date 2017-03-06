@@ -125,7 +125,6 @@ public void greetingguest() {
         butwith.setFocusPainted(false);
         butwith.setFocusable(false);
         butwith.setRequestFocusEnabled(false);
-        butwith.setRolloverEnabled(false);
         butwith.setVerifyInputWhenFocusTarget(false);
         butwith.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -143,7 +142,7 @@ public void greetingguest() {
                 butwithActionPerformed(evt);
             }
         });
-        getContentPane().add(butwith, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 250, 80));
+        getContentPane().add(butwith, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 250, 80));
 
         butbalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/balance.png"))); // NOI18N
         butbalance.setBorderPainted(false);
@@ -152,17 +151,16 @@ public void greetingguest() {
         butbalance.setFocusPainted(false);
         butbalance.setFocusable(false);
         butbalance.setRequestFocusEnabled(false);
-        butbalance.setRolloverEnabled(false);
         butbalance.setVerifyInputWhenFocusTarget(false);
         butbalance.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 butbalanceMouseClicked(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                butbalanceMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 butbalanceMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                butbalanceMouseExited(evt);
             }
         });
         butbalance.addActionListener(new java.awt.event.ActionListener() {
@@ -170,7 +168,7 @@ public void greetingguest() {
                 butbalanceActionPerformed(evt);
             }
         });
-        getContentPane().add(butbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 250, 80));
+        getContentPane().add(butbalance, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 250, 80));
 
         butpin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pinchange.png"))); // NOI18N
         butpin.setBorderPainted(false);
@@ -179,7 +177,6 @@ public void greetingguest() {
         butpin.setFocusPainted(false);
         butpin.setFocusable(false);
         butpin.setRequestFocusEnabled(false);
-        butpin.setRolloverEnabled(false);
         butpin.setVerifyInputWhenFocusTarget(false);
         butpin.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -201,7 +198,6 @@ public void greetingguest() {
         butlogout.setFocusPainted(false);
         butlogout.setFocusable(false);
         butlogout.setRequestFocusEnabled(false);
-        butlogout.setRolloverEnabled(false);
         butlogout.setVerifyInputWhenFocusTarget(false);
         butlogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -214,7 +210,7 @@ public void greetingguest() {
                 butlogoutMouseExited(evt);
             }
         });
-        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 470, 250, 80));
+        getContentPane().add(butlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 480, 250, 80));
 
         buttrans.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/transfers.png"))); // NOI18N
         buttrans.setBorderPainted(false);
@@ -223,7 +219,6 @@ public void greetingguest() {
         buttrans.setFocusPainted(false);
         buttrans.setFocusable(false);
         buttrans.setRequestFocusEnabled(false);
-        buttrans.setRolloverEnabled(false);
         buttrans.setVerifyInputWhenFocusTarget(false);
         buttrans.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -236,7 +231,7 @@ public void greetingguest() {
                 buttransMouseExited(evt);
             }
         });
-        getContentPane().add(buttrans, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 250, 80));
+        getContentPane().add(buttrans, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 250, 80));
 
         butclose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/close1.png"))); // NOI18N
         butclose.setBorderPainted(false);
@@ -246,7 +241,6 @@ public void greetingguest() {
         butclose.setFocusPainted(false);
         butclose.setFocusable(false);
         butclose.setRequestFocusEnabled(false);
-        butclose.setRolloverEnabled(false);
         butclose.setVerifyInputWhenFocusTarget(false);
         butclose.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -269,7 +263,6 @@ public void greetingguest() {
         butminimax.setFocusPainted(false);
         butminimax.setFocusable(false);
         butminimax.setRequestFocusEnabled(false);
-        butminimax.setRolloverEnabled(false);
         butminimax.setVerifyInputWhenFocusTarget(false);
         butminimax.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -293,7 +286,6 @@ public void greetingguest() {
         buthistory.setFocusPainted(false);
         buthistory.setFocusable(false);
         buthistory.setRequestFocusEnabled(false);
-        buthistory.setRolloverEnabled(false);
         buthistory.setVerifyInputWhenFocusTarget(false);
         buthistory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

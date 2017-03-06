@@ -106,7 +106,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         butexit.setFocusPainted(false);
         butexit.setFocusable(false);
         butexit.setRequestFocusEnabled(false);
-        butexit.setRolloverEnabled(false);
         butexit.setVerifyInputWhenFocusTarget(false);
         butexit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -130,7 +129,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         butminimize.setFocusPainted(false);
         butminimize.setFocusable(false);
         butminimize.setRequestFocusEnabled(false);
-        butminimize.setRolloverEnabled(false);
         butminimize.setVerifyInputWhenFocusTarget(false);
         butminimize.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -195,7 +193,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         butenter.setFocusPainted(false);
         butenter.setFocusable(false);
         butenter.setRequestFocusEnabled(false);
-        butenter.setRolloverEnabled(false);
         butenter.setVerifyInputWhenFocusTarget(false);
         butenter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -210,7 +207,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 butenterActionPerformed(evt);
             }
         });
-        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 250, 80));
+        getContentPane().add(butenter, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 250, 80));
 
         backspace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/backspace.png"))); // NOI18N
         backspace.setBorderPainted(false);
@@ -219,7 +216,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         backspace.setFocusPainted(false);
         backspace.setFocusable(false);
         backspace.setRequestFocusEnabled(false);
-        backspace.setRolloverEnabled(false);
         backspace.setVerifyInputWhenFocusTarget(false);
         backspace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -234,7 +230,7 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
                 backspaceActionPerformed(evt);
             }
         });
-        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 450, 250, 80));
+        getContentPane().add(backspace, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 450, 250, 80));
 
         but0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0.png"))); // NOI18N
         but0.setToolTipText("");
@@ -244,7 +240,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but0.setFocusPainted(false);
         but0.setFocusable(false);
         but0.setRequestFocusEnabled(false);
-        but0.setRolloverEnabled(false);
         but0.setVerifyInputWhenFocusTarget(false);
         but0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -268,7 +263,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but1.setFocusPainted(false);
         but1.setFocusable(false);
         but1.setRequestFocusEnabled(false);
-        but1.setRolloverEnabled(false);
         but1.setVerifyInputWhenFocusTarget(false);
         but1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -292,7 +286,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but2.setFocusPainted(false);
         but2.setFocusable(false);
         but2.setRequestFocusEnabled(false);
-        but2.setRolloverEnabled(false);
         but2.setVerifyInputWhenFocusTarget(false);
         but2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -316,7 +309,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but3.setFocusPainted(false);
         but3.setFocusable(false);
         but3.setRequestFocusEnabled(false);
-        but3.setRolloverEnabled(false);
         but3.setVerifyInputWhenFocusTarget(false);
         but3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -340,7 +332,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but4.setFocusPainted(false);
         but4.setFocusable(false);
         but4.setRequestFocusEnabled(false);
-        but4.setRolloverEnabled(false);
         but4.setVerifyInputWhenFocusTarget(false);
         but4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -364,7 +355,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but5.setFocusPainted(false);
         but5.setFocusable(false);
         but5.setRequestFocusEnabled(false);
-        but5.setRolloverEnabled(false);
         but5.setVerifyInputWhenFocusTarget(false);
         but5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -388,7 +378,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but6.setFocusPainted(false);
         but6.setFocusable(false);
         but6.setRequestFocusEnabled(false);
-        but6.setRolloverEnabled(false);
         but6.setVerifyInputWhenFocusTarget(false);
         but6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -412,7 +401,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but7.setFocusPainted(false);
         but7.setFocusable(false);
         but7.setRequestFocusEnabled(false);
-        but7.setRolloverEnabled(false);
         but7.setVerifyInputWhenFocusTarget(false);
         but7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -436,7 +424,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but8.setFocusPainted(false);
         but8.setFocusable(false);
         but8.setRequestFocusEnabled(false);
-        but8.setRolloverEnabled(false);
         but8.setVerifyInputWhenFocusTarget(false);
         but8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -460,7 +447,6 @@ public class EnterNumberCard extends javax.swing.JFrame implements Runnable {
         but9.setFocusPainted(false);
         but9.setFocusable(false);
         but9.setRequestFocusEnabled(false);
-        but9.setRolloverEnabled(false);
         but9.setVerifyInputWhenFocusTarget(false);
         but9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
