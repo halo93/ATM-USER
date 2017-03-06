@@ -2157,8 +2157,8 @@ public class TRANSFERframe extends javax.swing.JDialog {
             Connect.connectDatabase();
             CallableStatement cat = Connect.connectDatabase().prepareCall("{call Show_Account}");
             ResultSet rst = cat.executeQuery();
-            CallableStatement trc = Connect.connectDatabase().prepareCall("{call InsertTRANSFERS(?,?,?,?,?,?,?)}");
-            CallableStatement trcr = Connect.connectDatabase().prepareCall("{call InsertTRANSFERSreceived(?,?,?,?,?,?,?)}");
+            CallableStatement trc = Connect.connectDatabase().prepareCall("{call InsertTRANSFERS(?,?,?,?,?,?)}");
+            CallableStatement trcr = Connect.connectDatabase().prepareCall("{call InsertTRANSFERSreceived(?,?,?,?,?,?)}");
             CallableStatement calt = Connect.connectDatabase().prepareCall("{call ShowLimitSetting}");
             calt.setMaxRows(1);
             ResultSet reset = calt.executeQuery();
@@ -2182,7 +2182,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
             int row2Effected = trcr.executeUpdate();
 
             while (rst.next()) {
-                CallableStatement clt = Connect.connectDatabase().prepareCall("{call InsertREPORTS(?,?,?,?,?,?,?,?,?)}");
+                CallableStatement clt = Connect.connectDatabase().prepareCall("{call InsertREPORTS(?,?,?,?,?,?,?,?)}");
                 clt.setString(1, "");
                 clt.setString(2, rst.getString("AccountID").toString());
                 clt.setString(3, rst.getString("Fullname").toString());

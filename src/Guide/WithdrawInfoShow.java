@@ -124,15 +124,17 @@ public class WithdrawInfoShow extends javax.swing.JDialog {
             CallableStatement cat = Connect.connectDatabase().prepareCall("{call WITHDRAWshow(?)}");
             cat.setString(1, accountID);
             cat.setMaxRows(10);
+            System.out.println(cat);
             ResultSet result = cat.executeQuery();
             while (result.next()) {
-
+                
                 Vector data = new Vector();
                 data.add(result.getString("WithdrawDate"));
                 data.add(result.getFloat("MoneyWithdrawn"));
                 data.add(result.getFloat("TransactionFee"));
                 data.add(result.getFloat("Total"));
                 mod.addRow(data);
+                System.out.println(data);
 
             }
         } catch (Exception ex) {

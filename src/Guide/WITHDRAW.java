@@ -842,7 +842,7 @@ public class WITHDRAW extends javax.swing.JDialog {
             Connect.connectDatabase();
             CallableStatement cat = Connect.connectDatabase().prepareCall("{call Show_Account}");
             ResultSet rst = cat.executeQuery();
-            CallableStatement trc = Connect.connectDatabase().prepareCall("{call InsertWITHDRAW(?,?,?,?,?,?)}");
+            CallableStatement trc = Connect.connectDatabase().prepareCall("{call InsertWITHDRAW(?,?,?,?,?)}");
             System.out.println("TC1");
             CallableStatement calt = Connect.connectDatabase().prepareCall("{call ShowLimitSetting}");
             calt.setMaxRows(1);
@@ -859,7 +859,7 @@ public class WITHDRAW extends javax.swing.JDialog {
                         
                         trc.executeUpdate();
                         
-                        CallableStatement clt = Connect.connectDatabase().prepareCall("{call InsertREPORTS(?,?,?,?,?,?,?,?,?)}");
+                        CallableStatement clt = Connect.connectDatabase().prepareCall("{call InsertREPORTS(?,?,?,?,?,?,?,?)}");
                         clt.setString(1, "");
                         clt.setString(2, rst.getString("AccountID").toString());
                         clt.setString(3, rst.getString("Fullname").toString());
