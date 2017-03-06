@@ -174,7 +174,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         butcancel.setFocusPainted(false);
         butcancel.setFocusable(false);
         butcancel.setRequestFocusEnabled(false);
-        butcancel.setRolloverEnabled(false);
         butcancel.setVerifyInputWhenFocusTarget(false);
         butcancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -211,14 +210,13 @@ public class TRANSFERframe extends javax.swing.JDialog {
         getContentPane().add(lbinputmoney, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, 20));
 
         transferbn.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        transferbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/transfers.png"))); // NOI18N
+        transferbn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ok.png"))); // NOI18N
         transferbn.setBorderPainted(false);
         transferbn.setContentAreaFilled(false);
         transferbn.setDefaultCapable(false);
         transferbn.setFocusPainted(false);
         transferbn.setFocusable(false);
         transferbn.setRequestFocusEnabled(false);
-        transferbn.setRolloverEnabled(false);
         transferbn.setVerifyInputWhenFocusTarget(false);
         transferbn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -233,7 +231,7 @@ public class TRANSFERframe extends javax.swing.JDialog {
                 transferbnActionPerformed(evt);
             }
         });
-        getContentPane().add(transferbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 250, 80));
+        getContentPane().add(transferbn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 250, 80));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -248,7 +246,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but1.setFocusPainted(false);
         but1.setFocusable(false);
         but1.setRequestFocusEnabled(false);
-        but1.setRolloverEnabled(false);
         but1.setVerifyInputWhenFocusTarget(false);
         but1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -272,7 +269,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but2.setFocusPainted(false);
         but2.setFocusable(false);
         but2.setRequestFocusEnabled(false);
-        but2.setRolloverEnabled(false);
         but2.setVerifyInputWhenFocusTarget(false);
         but2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -296,7 +292,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but3.setFocusPainted(false);
         but3.setFocusable(false);
         but3.setRequestFocusEnabled(false);
-        but3.setRolloverEnabled(false);
         but3.setVerifyInputWhenFocusTarget(false);
         but3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -320,7 +315,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but6.setFocusPainted(false);
         but6.setFocusable(false);
         but6.setRequestFocusEnabled(false);
-        but6.setRolloverEnabled(false);
         but6.setVerifyInputWhenFocusTarget(false);
         but6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -344,7 +338,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but5.setFocusPainted(false);
         but5.setFocusable(false);
         but5.setRequestFocusEnabled(false);
-        but5.setRolloverEnabled(false);
         but5.setVerifyInputWhenFocusTarget(false);
         but5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -368,7 +361,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but4.setFocusPainted(false);
         but4.setFocusable(false);
         but4.setRequestFocusEnabled(false);
-        but4.setRolloverEnabled(false);
         but4.setVerifyInputWhenFocusTarget(false);
         but4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -392,7 +384,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but7.setFocusPainted(false);
         but7.setFocusable(false);
         but7.setRequestFocusEnabled(false);
-        but7.setRolloverEnabled(false);
         but7.setVerifyInputWhenFocusTarget(false);
         but7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -416,7 +407,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but8.setFocusPainted(false);
         but8.setFocusable(false);
         but8.setRequestFocusEnabled(false);
-        but8.setRolloverEnabled(false);
         but8.setVerifyInputWhenFocusTarget(false);
         but8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -440,7 +430,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but9.setFocusPainted(false);
         but9.setFocusable(false);
         but9.setRequestFocusEnabled(false);
-        but9.setRolloverEnabled(false);
         but9.setVerifyInputWhenFocusTarget(false);
         but9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -465,7 +454,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         but0.setFocusPainted(false);
         but0.setFocusable(false);
         but0.setRequestFocusEnabled(false);
-        but0.setRolloverEnabled(false);
         but0.setVerifyInputWhenFocusTarget(false);
         but0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -489,7 +477,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         backspace.setFocusPainted(false);
         backspace.setFocusable(false);
         backspace.setRequestFocusEnabled(false);
-        backspace.setRolloverEnabled(false);
         backspace.setVerifyInputWhenFocusTarget(false);
         backspace.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -513,7 +500,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re1.setFocusPainted(false);
         re1.setFocusable(false);
         re1.setRequestFocusEnabled(false);
-        re1.setRolloverEnabled(false);
         re1.setVerifyInputWhenFocusTarget(false);
         re1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -537,7 +523,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re2.setFocusPainted(false);
         re2.setFocusable(false);
         re2.setRequestFocusEnabled(false);
-        re2.setRolloverEnabled(false);
         re2.setVerifyInputWhenFocusTarget(false);
         re2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -561,7 +546,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re3.setFocusPainted(false);
         re3.setFocusable(false);
         re3.setRequestFocusEnabled(false);
-        re3.setRolloverEnabled(false);
         re3.setVerifyInputWhenFocusTarget(false);
         re3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -585,7 +569,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re4.setFocusPainted(false);
         re4.setFocusable(false);
         re4.setRequestFocusEnabled(false);
-        re4.setRolloverEnabled(false);
         re4.setVerifyInputWhenFocusTarget(false);
         re4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -609,7 +592,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re5.setFocusPainted(false);
         re5.setFocusable(false);
         re5.setRequestFocusEnabled(false);
-        re5.setRolloverEnabled(false);
         re5.setVerifyInputWhenFocusTarget(false);
         re5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -633,7 +615,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re6.setFocusPainted(false);
         re6.setFocusable(false);
         re6.setRequestFocusEnabled(false);
-        re6.setRolloverEnabled(false);
         re6.setVerifyInputWhenFocusTarget(false);
         re6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -657,7 +638,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re7.setFocusPainted(false);
         re7.setFocusable(false);
         re7.setRequestFocusEnabled(false);
-        re7.setRolloverEnabled(false);
         re7.setVerifyInputWhenFocusTarget(false);
         re7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -681,7 +661,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re8.setFocusPainted(false);
         re8.setFocusable(false);
         re8.setRequestFocusEnabled(false);
-        re8.setRolloverEnabled(false);
         re8.setVerifyInputWhenFocusTarget(false);
         re8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -705,7 +684,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re9.setFocusPainted(false);
         re9.setFocusable(false);
         re9.setRequestFocusEnabled(false);
-        re9.setRolloverEnabled(false);
         re9.setVerifyInputWhenFocusTarget(false);
         re9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -730,7 +708,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         re0.setFocusPainted(false);
         re0.setFocusable(false);
         re0.setRequestFocusEnabled(false);
-        re0.setRolloverEnabled(false);
         re0.setVerifyInputWhenFocusTarget(false);
         re0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -754,7 +731,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         backspacere.setFocusPainted(false);
         backspacere.setFocusable(false);
         backspacere.setRequestFocusEnabled(false);
-        backspacere.setRolloverEnabled(false);
         backspacere.setVerifyInputWhenFocusTarget(false);
         backspacere.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -778,7 +754,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am1.setFocusPainted(false);
         am1.setFocusable(false);
         am1.setRequestFocusEnabled(false);
-        am1.setRolloverEnabled(false);
         am1.setVerifyInputWhenFocusTarget(false);
         am1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -802,7 +777,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am2.setFocusPainted(false);
         am2.setFocusable(false);
         am2.setRequestFocusEnabled(false);
-        am2.setRolloverEnabled(false);
         am2.setVerifyInputWhenFocusTarget(false);
         am2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -826,7 +800,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am3.setFocusPainted(false);
         am3.setFocusable(false);
         am3.setRequestFocusEnabled(false);
-        am3.setRolloverEnabled(false);
         am3.setVerifyInputWhenFocusTarget(false);
         am3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -850,7 +823,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am4.setFocusPainted(false);
         am4.setFocusable(false);
         am4.setRequestFocusEnabled(false);
-        am4.setRolloverEnabled(false);
         am4.setVerifyInputWhenFocusTarget(false);
         am4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -874,7 +846,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am5.setFocusPainted(false);
         am5.setFocusable(false);
         am5.setRequestFocusEnabled(false);
-        am5.setRolloverEnabled(false);
         am5.setVerifyInputWhenFocusTarget(false);
         am5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -898,7 +869,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am6.setFocusPainted(false);
         am6.setFocusable(false);
         am6.setRequestFocusEnabled(false);
-        am6.setRolloverEnabled(false);
         am6.setVerifyInputWhenFocusTarget(false);
         am6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -922,7 +892,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am7.setFocusPainted(false);
         am7.setFocusable(false);
         am7.setRequestFocusEnabled(false);
-        am7.setRolloverEnabled(false);
         am7.setVerifyInputWhenFocusTarget(false);
         am7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -946,7 +915,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am8.setFocusPainted(false);
         am8.setFocusable(false);
         am8.setRequestFocusEnabled(false);
-        am8.setRolloverEnabled(false);
         am8.setVerifyInputWhenFocusTarget(false);
         am8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -970,7 +938,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am9.setFocusPainted(false);
         am9.setFocusable(false);
         am9.setRequestFocusEnabled(false);
-        am9.setRolloverEnabled(false);
         am9.setVerifyInputWhenFocusTarget(false);
         am9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -995,7 +962,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         am0.setFocusPainted(false);
         am0.setFocusable(false);
         am0.setRequestFocusEnabled(false);
-        am0.setRolloverEnabled(false);
         am0.setVerifyInputWhenFocusTarget(false);
         am0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -1019,7 +985,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
         backspaceam.setFocusPainted(false);
         backspaceam.setFocusable(false);
         backspaceam.setRequestFocusEnabled(false);
-        backspaceam.setRolloverEnabled(false);
         backspaceam.setVerifyInputWhenFocusTarget(false);
         backspaceam.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -1102,13 +1067,13 @@ public class TRANSFERframe extends javax.swing.JDialog {
     }//GEN-LAST:event_butcancelMouseExited
 
     private void transferbnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transferbnMouseEntered
-        transferbn.setIcon(new ImageIcon("src/images/transfers1.png"));
+        transferbn.setIcon(new ImageIcon("src/images/ok1.png"));
 
         // TODO add your handling code here:
     }//GEN-LAST:event_transferbnMouseEntered
 
     private void transferbnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transferbnMouseExited
-        transferbn.setIcon(new ImageIcon("src/images/transfers.png"));
+        transferbn.setIcon(new ImageIcon("src/images/ok.png"));
         // TODO add your handling code here:
     }//GEN-LAST:event_transferbnMouseExited
 
