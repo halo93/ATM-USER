@@ -1017,7 +1017,6 @@ public class TRANSFERframe extends javax.swing.JDialog {
 
         if (txtaccount1.getText().equals("") || txtaccount2.getText().equals("") || txtmoneytrans.getText().equals("")) {
 
-
             lbcheckaccount.setText("<html><font color = 'red'>None of those fields should be blank!</font></html>");
         } else {
             lbcheckaccount.setText(null);
@@ -1042,10 +1041,13 @@ public class TRANSFERframe extends javax.swing.JDialog {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-        }if (check_account == false) {
+            if (check_account == false) {
+            System.out.println(check_account);
                     JOptionPane.showMessageDialog(this, "The Beneficiary account you input does not exist");
                 }
+
+        }
+        
     }//GEN-LAST:event_transferbnActionPerformed
 
     private void butcancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_butcancelMouseClicked
